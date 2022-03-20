@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- for icon -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inputText">
+        <input type="text" placeholder="Enter new text" />
+      </div>
+      <div class="controls">
+        <div class="filter">
+          <span>All</span>
+          <span>Pending</span>
+          <span>Completed</span>
+        </div>
+        <button class="btn">clear all</button>
+      </div>
+      <ul class="task-list">
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" id="1" />
+            <p>Lorem ipsum dolor sit.</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+            <ul class="sideMenu">
+              <li >
+                <i class="uil uil-pen">Edit</i>
+              </li>
+              <li>
+                <i class="uil uil-trash">Delete</i>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="task">
+          <label for="2">
+            <input type="checkbox" id="2" />
+            <p>Lorem ipsum dolor sit.</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="3">
+            <input type="checkbox" id="3" />
+            <p>Lorem ipsum dolor sit.</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="4">
+            <input type="checkbox" id="4" />
+            <p>Lorem ipsum dolor sit.</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
