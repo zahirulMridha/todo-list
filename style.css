@@ -34,6 +34,10 @@ body {
 .filter span {
   margin: 0 8px 0 0;
   font-size: 20px;
+  cursor: pointer;
+}
+.filter .active {
+  color:rgb(7, 185, 76); ;
 }
 .controls .btn {
   padding: 8px 10px;
@@ -46,6 +50,10 @@ body {
 }
 .task-list {
   padding: 20px 10px;
+}
+/* class add/remove by js */
+.task-list .checked {
+  text-decoration: line-through;
 }
 .task label {
   display: flex;
@@ -68,8 +76,6 @@ body {
 .setting {
   position: relative;
   cursor: pointer;
- 
-
 }
 .sideMenu {
   position: absolute;
@@ -83,19 +89,19 @@ body {
   transition: transform 0.3s;
   transform-origin: top right;
 }
-.setting:hover .sideMenu { 
+.setting .sideMenu.show {
   transform: scale(1);
 }
 .sideMenu {
-   padding: 10px 10px;
-   width: 60px;
+  padding: 10px 10px;
+  width: 60px;
 }
 .sideMenu:last-child {
-   padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .wrapper {
-    min-width: 40%; 
+    min-width: 40%;
   }
 }
